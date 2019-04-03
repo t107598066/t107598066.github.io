@@ -15,11 +15,12 @@ window.onload = function () {
     var lng = 121.53;
     var zoom = 13;
 
-    var latRecord = 25.032;
-    var lngRecord = 121.53;
+    var latRecord = 25.032;;
+    var lngRecord = 121.53;;
 
     var mymap = L.map('mapid').setView([lat, lng], zoom);
     L.tileLayer('https://api.mapbox.com/styles/v1/donatuswolf/cjshijl1c13o41empmevvh85j/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZG9uYXR1c3dvbGYiLCJhIjoiY2pzaGdrcGMzMG40aDQzbjVudTJhZzZ6ZyJ9.McGYoRXAEFRlb9lG8CMXmg').addTo(mymap);
+
 
     //// load dataset from json ////////
 
@@ -53,6 +54,26 @@ window.onload = function () {
                 $('#photo').removeClass('hidden'); // show photo
                 $('#photobg').removeClass('hidden');
             });
+            //// get Lat Lng ////////
+
+            mymap.on("click", function (event) {
+              var myLatLng = event.latlng.toString();
+              var myLat = event.latlng.lat.toString();
+              var myLng = event.latlng.lng.toString();
+              myLat = myLat.substring(0,8);
+              myLng = myLng.substring(0,8);
+              var google_url = "https://www.google.com/maps/place/" + myLat + "," + myLng;
+              document.getElementById('recordLatLng').value = google_url;
+              document.getElementById('recordLng').value = myLng;
+              document.getElementById('recordLat').value =  myLat;
+              latRecord = myLat;
+              lngRecord = myLng;
+            });
+
+            // if(location.href == "file:///C:/Users/DiBanHowLion/Desktop/Sounds-of-Taipei-master/form.html")
+            // {
+            //   alert("dsad");
+            // }
 
             //// doubleclick ////////
 
@@ -79,6 +100,8 @@ window.onload = function () {
             }
         }
     });
+    document.getElementById('recordLng').value = latRecord;
+    document.getElementById('recordLat').value =  lngRecord;
 
     function map(x, in_min, in_max, out_min, out_max) {
         return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;

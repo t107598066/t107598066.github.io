@@ -41,17 +41,38 @@
                     <h3>Events</h3>
                     <p>Recorded at special events</p>
                 </li>
-            </ul>
+                <li class="item4">
+                    <h3><a href="form.html" target="_self">Manual add location</a></h3>
+                    <p>Manual add new location</p>
+                </li>
 
-            <br>當前經度 :
-            <br>當前緯度 :
-            <br>輸入地標
-            <input type="text" id="inputNameAdd" name="inputNameAdd" minlength="4" maxlength="8" size="10">
-            <br>上傳圖片
+
             <form method="POST" action="test.php">
-                <input type="file" name="upload">
+                <br>當前經度 :
+                <input id="recordLng" name="recordLng" type="text" size="30" value="" />
+                <br>當前緯度 :
+                <input id="recordLat" name="recordLat" type="text" size="30" value="" />
+                <br>google map 網址 :
+                <input id="recordLatLng" name="recordLatLng" type="text" size="30" value="" />
+                <br>輸入地標名稱:
+                <input type="text" id="inputNameAdd" name="inputNameAdd" minlength="4" maxlength="8" size="14" required="required" >
+                <br>label:<br>
+                <input type="text" id="inputLabelAdd" name="inputLabelAdd" minlength="4" maxlength="8" size="14" required="required" >
+                <br>time:
+                  <select name="time">
+                　<option value="day">day</option>
+                　<option value="night">night</option>
+                  </select>
+                <br>author:<br>
+                <input type="text" id="inputAuthorAdd" name="inputAuthorAdd" minlength="4" maxlength="8" size="10" required="required" >
+                <br>上傳圖片 :
+                    <input type="file" name="upload" accept="image/*"/>
+                <br>上傳音檔 :
+                    <input type="file" name="uploadMusic" accept="audio/*" />
+                <p>
                 <input type="submit" value="上傳">
             </form>
+          </ul>
         </div>
         <div class="bottom">
 
