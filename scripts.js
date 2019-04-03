@@ -15,6 +15,9 @@ window.onload = function () {
     var lng = 121.53;
     var zoom = 13;
 
+    var latRecord = 25.032;
+    var lngRecord = 121.53;
+
     var mymap = L.map('mapid').setView([lat, lng], zoom);
     L.tileLayer('https://api.mapbox.com/styles/v1/donatuswolf/cjshijl1c13o41empmevvh85j/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZG9uYXR1c3dvbGYiLCJhIjoiY2pzaGdrcGMzMG40aDQzbjVudTJhZzZ6ZyJ9.McGYoRXAEFRlb9lG8CMXmg').addTo(mymap);
 
