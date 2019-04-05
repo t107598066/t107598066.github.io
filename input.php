@@ -14,16 +14,21 @@
     if ($conn->query($sql) === TRUE)
     {
       // upload pic to localhost server
-
-        $tmp_name = $_FILES['uploadPic']['tmp_name'];
-        $name = $_FILES['uploadPic']['name'];
-        move_uploaded_file($tmp_name,"assets/photos/".$name);
+      $newName = $uploadName;
+      $fileName = $_FILES['uploadPic']['name'];
+      $nameExplode=explode('.',$fileName);
+      $newPath=$newName.'.'.$nameExplode[1];
+      $oldPath=$_FILES['uploadPic']['tmp_name'];
+      move_uploaded_file($oldPath,"assets/photos/".$newPath);
 
       // upload mp3 to localhost server
 
-        $tmp_name = $_FILES['uploadMusic']['tmp_name'];
-        $name = $_FILES['uploadMusic']['name'];
-        move_uploaded_file($tmp_name,"assets/sounds/".$name);
+      $newName = $uploadName;
+      $fileName = $_FILES['uploadMusic']['name'];
+      $nameExplode=explode('.',$fileName);
+      $newPath=$newName.'.'.$nameExplode[1];
+      $oldPath=$_FILES['uploadMusic']['tmp_name'];
+      move_uploaded_file($oldPath,"assets/sounds/".$newPath);
 
 
       // update json file
