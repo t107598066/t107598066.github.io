@@ -44,7 +44,7 @@
                     <p>Manual add new location</p>
                 </li>
 
-            <form method="POST" action="input.php">
+            <form method="POST" enctype="multipart/form-data" action="input.php">
 
                 <br>當前經度 :
                 <input id="recordLng" name="recordLng" type="text" size="30" value="" required="required">
@@ -64,9 +64,11 @@
                 <br>author:<br>
                 <input type="text" id="inputAuthorAdd" name="inputAuthorAdd" minlength="4" maxlength="8" size="10" required="required" >
                 <br>上傳圖片 :
-                    <input type="file" name="upload" accept="image/*"/>
+                    <input type="file" name="uploadPic">
+                     <!-- accept="image/*"/ -->
                 <br>上傳音檔 :
                     <input type="file" name="uploadMusic" accept="audio/*" />
+                    <!-- accept="audio/*" / -->
                 <p>
                 <input type="submit" value="上傳">
             </form>

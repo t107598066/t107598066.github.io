@@ -7,11 +7,26 @@
     $uploadLng = $_POST['recordLng'];
     $uploadGoogleMapURL = $_POST['googleMapURL'];
     $uploadTime = $_POST['time'];
+
     // upload to database
     $sql = "INSERT INTO data(name,label,lat,lng,googleMapURL,time,date) VALUES('$uploadName','$uploadLabel','$uploadLat','$uploadLng','$uploadGoogleMapURL','$uploadTime',now())";
-    // update json file
+
     if ($conn->query($sql) === TRUE)
     {
+      // upload pic to localhost server
+
+        $tmp_name = $_FILES['uploadPic']['tmp_name'];
+        $name = $_FILES['uploadPic']['name'];
+        move_uploaded_file($tmp_name,"assets/photos/".$name);
+
+      // upload mp3 to localhost server
+
+        $tmp_name = $_FILES['uploadMusic']['tmp_name'];
+        $name = $_FILES['uploadMusic']['name'];
+        move_uploaded_file($tmp_name,"assets/sounds/".$name);
+
+
+      // update json file
       $str = file_get_contents('places.json');
        $arr = json_decode($str, true);
         $data = array('id'=>$uploadName,'label'=>$uploadLabel,'googlemaps'=>$uploadGoogleMapURL,'vol'=>'1','db'=>'0.5','x'=>$uploadLat,'y'=>$uploadLng,'type'=>'city','time'=>$uploadTime,'author'=>'me');
@@ -26,7 +41,7 @@
           }
           else
           {
-            
+
           }
 
       header("location:success.php");
