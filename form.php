@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <meta charset='UTF-8'>
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="dark_style.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -10,37 +10,39 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
     <script type='text/javascript' src='scripts.js'></script>
 </head>
-<meta http-equiv="Content-Type" content="text/html; charset=big5">
-<title>╥s╪W sound ╕Л╦m</title>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=big5"> -->
+<title>Sounds of Taipei</title>
+
 <body>
-  <p align="center"><font size="15" color="white"><b>╥s╪W╙МЁФ</b></font>
+  <p align="center"><font size="15" color="white"><b>Ф√╟Е╒·Е°╟Ф╗≥Х│╡И÷Ё</b></font>
+<form method="POST" action="input.php">
 <table border="4" width="600" id="table1" bgcolor="white" height="70" bordercolor="black" align="center">
      <tr>
-         <td width="100"><font size="5" color="black">╕a╪п╕W╨ы</font></td>
+         <td width="100"><font size="5" color="black">Х╪╦Е┘╔Е°╟Ф╗≥Е░█</font></td>
          <td><input type="text" id="inputNameAdd" name="inputNameAdd" minlength="4" maxlength="8" size="14" required="required" ></td>
      </tr>
      <tr>
-         <td width="100"><font size="5" color="black">╕a╪п╪пер</td>
+         <td width="100"><font size="5" color="black">Х╪╦Е┘╔Ф╗≥Г╠╓</td>
          <td><input type="text" id="inputLabelAdd" name="inputLabelAdd" minlength="4" maxlength="8" size="14" required="required" ></td>
      </tr>
      <tr>
-         <td width="100"><font size="5" color="black">╫s©Х╙л</td>
+         <td width="100"><font size="5" color="black">Г╥╗Х╪╞Х─┘</td>
          <td><input type="text" id="inputAuthorAdd" name="inputAuthorAdd" minlength="4" maxlength="8" size="10" required="required" ></td>
      </tr>
      <tr>
-         <td width="100"><font size="5" color="black">╥М╚e╦g╚в</td>
-         <td><input id="recordLng" name="recordLng" type="text" size="30" value="" /></td>
+         <td width="100"><font size="5" color="black">Г╤⌠Е╨╕</td>
+         <td><input id="recordLng" name="recordLng" type="text" size="30" value="" required="required"/></td>
      </tr>
      <tr>
-         <td width="100"><font size="5" color="black">╥М╚e╫n╚в</td>
-         <td><input id="recordLat" name="recordLat" type="text" size="30" value="" /></td>
+         <td width="100"><font size="5" color="black">Г╥╞Е╨╕</td>
+         <td><input id="recordLat" name="recordLat" type="text" size="30" value="" required="required"/></td>
      </tr>
      <tr>
-       <td width="100"><font size="5" color="black">╝и╤║</td>
+       <td width="100"><font size="5" color="black">Ф≥┌И√⌠</td>
        <td><form>
            <select name="time" style="font-size:20px;">
-         ║@<option value="day">day</option>
-         ║@<option value="night">night</option>
+             <option value="day">day</option>
+             <option value="night">night</option>
          </select>
        </form></td>
      </tr>
@@ -53,7 +55,10 @@
 
 
 </table>
-      <p align="center"><input type="button" style="width:120px;height:40px;font-size:20px;" onclick="javascript:location.href='index.html'"  value="╙П╕^">
-        <input type="button" style="width:120px;height:40px;font-size:20px;" value="╟e╔X">
+
+      <p align="center"><input type="button" style="width:120px;height:40px;font-size:20px;" onclick="javascript:location.href='index.php'"  value="Х©■Е⌡·">
+      <input type="submit" style="width:120px;height:40px;font-size:20px;" value="И─│Е┤╨">
+</form>
 </body>
+
 </html>

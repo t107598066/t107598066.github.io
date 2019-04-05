@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang='en'>
-
 <head>
     <meta charset='UTF-8'>
     <title>Sounds of Taipei</title>
@@ -20,7 +19,6 @@
     <link rel='stylesheet' href='libraries/leaflet.css'>
     <script type='text/javascript' src='libraries/leaflet.js'></script>
 </head>
-
 <body>
     <div class="sidebar">
         <div class="top">
@@ -42,18 +40,18 @@
                     <p>Recorded at special events</p>
                 </li>
                 <li class="item4">
-                    <h3><a href="form.html" target="_self">Manual add location</a></h3>
+                    <h3><a href="form.php" target="_self">Manual add location</a></h3>
                     <p>Manual add new location</p>
                 </li>
 
+            <form method="POST" action="input.php">
 
-            <form method="POST" action="test.php">
                 <br>當前經度 :
-                <input id="recordLng" name="recordLng" type="text" size="30" value="" />
+                <input id="recordLng" name="recordLng" type="text" size="30" value="" required="required">
                 <br>當前緯度 :
-                <input id="recordLat" name="recordLat" type="text" size="30" value="" />
+                <input id="recordLat" name="recordLat" type="text" size="30" value="" required="required">
                 <br>google map 網址 :
-                <input id="recordLatLng" name="recordLatLng" type="text" size="30" value="" />
+                <input id="googleMapURL" name="googleMapURL" type="text" size="30" value="" required="required">
                 <br>輸入地標名稱:
                 <input type="text" id="inputNameAdd" name="inputNameAdd" minlength="4" maxlength="8" size="14" required="required" >
                 <br>label:<br>
