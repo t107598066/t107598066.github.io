@@ -3,13 +3,17 @@
     // $nname = $_POST['$inputNameAdd'];
     $uploadName = $_POST['inputNameAdd'];
     $uploadLabel = $_POST['inputLabelAdd'];
+    $uploadVol = $_POST['vol'];
+    $uploadDb = $_POST['db'];
     $uploadLat = $_POST['recordLat'];
     $uploadLng = $_POST['recordLng'];
     $uploadGoogleMapURL = $_POST['googleMapURL'];
     $uploadTime = $_POST['time'];
+    $uploadType = $_POST['type'];
+    $uploadAuthor = $_POST['inputAuthorAdd'];
 
     // upload to database
-    $sql = "INSERT INTO data(name,label,lat,lng,googleMapURL,time,date) VALUES('$uploadName','$uploadLabel','$uploadLat','$uploadLng','$uploadGoogleMapURL','$uploadTime',now())";
+    $sql = "INSERT INTO data(name,label,vol,db,lat,lng,googleMapURL,time,type,author,date) VALUES('$uploadName','$uploadLabel','$uploadVol','$uploadDb','$uploadLat','$uploadLng','$uploadGoogleMapURL','$uploadTime','$uploadType','$uploadAuthor',now())";
 
     if ($conn->query($sql) === TRUE)
     {
@@ -34,7 +38,7 @@
       // update json file
       $str = file_get_contents('places.json');
        $arr = json_decode($str, true);
-        $data = array('id'=>$uploadName,'label'=>$uploadLabel,'googlemaps'=>$uploadGoogleMapURL,'vol'=>'1','db'=>'0.5','x'=>$uploadLat,'y'=>$uploadLng,'type'=>'city','time'=>$uploadTime,'author'=>'me');
+        $data = array('id'=>$uploadName,'label'=>$uploadLabel,'googlemaps'=>$uploadGoogleMapURL,'vol'=>$uploadVol,'db'=>$uploadDb,'x'=>$uploadLat,'y'=>$uploadLng,'type'=>$uploadType,'time'=>$uploadTime,'author'=>$uploadAuthor);
         array_push( $arr, $data);
         $str = json_encode($arr);
 

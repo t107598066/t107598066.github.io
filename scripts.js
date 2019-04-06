@@ -4,6 +4,7 @@ window.onload = function () {
     var radiusMax = 20;
 
     var color = {
+        null: '#444444',
         city: '#3a7bbf',
         location: '#99e0dc',
         event: '#ae65d5'

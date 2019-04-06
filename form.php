@@ -15,7 +15,7 @@
 
 <body>
   <p align="center"><font size="15" color="white"><b>新增地標聲音</b></font>
-<form method="POST" action="input.php">
+<form method="POST" enctype="multipart/form-data" action="input.php">
 <table border="4" width="600" id="table1" bgcolor="white" height="70" bordercolor="black" align="center">
      <tr>
          <td width="100"><font size="5" color="black">輸入地標名</font></td>
@@ -26,33 +26,61 @@
          <td><input type="text" id="inputLabelAdd" name="inputLabelAdd" minlength="4" maxlength="8" size="14" required="required" ></td>
      </tr>
      <tr>
-         <td width="100"><font size="5" color="black">編輯者</td>
-         <td><input type="text" id="inputAuthorAdd" name="inputAuthorAdd" minlength="4" maxlength="8" size="10" required="required" ></td>
+         <td width="100"><font size="5" color="black">googlemaps</td>
+        <td><input type="text" id="googleMapURL" name="googleMapURL" minlength="4" maxlength="100" size="14" required="required" ></td>
+
      </tr>
      <tr>
-         <td width="100"><font size="5" color="black">經度</td>
-         <td><input id="recordLng" name="recordLng" type="text" size="30" value="" required="required"/></td>
+         <td width="100"><font size="5" color="black">vol(0~1)</td>
+        <td><input type="text" id="vol" name="vol" minlength="1" maxlength="4" size="14" required="required" ></td>
+
+     </tr>
+     <tr>
+         <td width="100"><font size="5" color="black">db(0~1)</td>
+        <td><input type="text" id="db" name="db" minlength="1" maxlength="4" size="14" required="required" ></td>
+
      </tr>
      <tr>
          <td width="100"><font size="5" color="black">緯度</td>
          <td><input id="recordLat" name="recordLat" type="text" size="30" value="" required="required"/></td>
      </tr>
      <tr>
+         <td width="100"><font size="5" color="black">經度</td>
+         <td><input id="recordLng" name="recordLng" type="text" size="30" value="" required="required"/></td>
+     </tr>
+
+     <tr>
        <td width="100"><font size="5" color="black">時間</td>
-       <td><form>
+       <td>
            <select name="time" style="font-size:20px;">
              <option value="day">day</option>
              <option value="night">night</option>
          </select>
-       </form></td>
+       </td>
      </tr>
      <tr>
-         <td width="100"><font size="5" color="black">googlemaps</td>
-        <td><input type="text" id="inputMapAdd" name="inputMapAdd" minlength="4" maxlength="8" size="14" required="required" ></td>
-
+       <td width="100"><font size="5" color="black">種類</td>
+       <td>
+         <select name="type"  style="font-size:20px;">
+         <option value="null"> </option>
+       　<option value="city">city</option>
+       　<option value="location">location</option>
+       　<option value="event">event</option>
+         </select>
+       </td>
      </tr>
-
-
+     <tr>
+         <td width="100"><font size="5" color="black">上傳圖片</td>
+         <td><input type="file" name="uploadPic" accept="image/*"/></td>
+     </tr>
+     <tr>
+         <td width="100"><font size="5" color="black">上傳音檔</td>
+         <td><input type="file" name="uploadMusic" accept="audio/*"/></td>
+     </tr>
+     <tr>
+         <td width="100"><font size="5" color="black">編輯者</td>
+         <td><input type="text" id="inputAuthorAdd" name="inputAuthorAdd" minlength="4" maxlength="8" size="10" required="required" ></td>
+     </tr>
 
 </table>
 

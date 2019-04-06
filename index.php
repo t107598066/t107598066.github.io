@@ -45,30 +45,38 @@
                 </li>
 
             <form method="POST" enctype="multipart/form-data" action="input.php">
-
-                <br>當前經度 :
-                <input id="recordLng" name="recordLng" type="text" size="30" value="" required="required">
+                <br>輸入地標名稱:
+                <input type="text" id="inputNameAdd" name="inputNameAdd" size="30" value="" required="required">
+                <br>label:<br>
+                <input type="text" id="inputLabelAdd" name="inputLabelAdd" size="30" value="" required="required">
+                <br>google map:
+                <input id="googleMapURL" name="googleMapURL" type="text" size="30" value="" required="required">
+                <br>vol(0~1) :
+                <input id="vol" name="vol" type="text" size="30" value="" required="required">
+                <br>db(0~1) :
+                <input id="db" name="db" type="text" size="30" value="" required="required">
                 <br>當前緯度 :
                 <input id="recordLat" name="recordLat" type="text" size="30" value="" required="required">
-                <br>google map 網址 :
-                <input id="googleMapURL" name="googleMapURL" type="text" size="30" value="" required="required">
-                <br>輸入地標名稱:
-                <input type="text" id="inputNameAdd" name="inputNameAdd" minlength="4" maxlength="8" size="14" required="required" >
-                <br>label:<br>
-                <input type="text" id="inputLabelAdd" name="inputLabelAdd" minlength="4" maxlength="8" size="14" required="required" >
-                <br>time:
+                <br>當前經度 :
+                <input id="recordLng" name="recordLng" type="text" size="30" value="" required="required">
+                <br>time:<br>
                   <select name="time">
                 　<option value="day">day</option>
                 　<option value="night">night</option>
                   </select>
+                <br>type:<br>
+                  <select name="type">
+                  <option value="null"> </option>
+                　<option value="city">city</option>
+                　<option value="location">location</option>
+                　<option value="event">event</option>
+                  </select>
                 <br>author:<br>
                 <input type="text" id="inputAuthorAdd" name="inputAuthorAdd" minlength="4" maxlength="8" size="10" required="required" >
                 <br>上傳圖片 :
-                    <input type="file" name="uploadPic">
-                     <!-- accept="image/*"/ -->
+                    <input type="file" name="uploadPic" accept="image/*"/>
                 <br>上傳音檔 :
-                    <input type="file" name="uploadMusic" accept="audio/*" />
-                    <!-- accept="audio/*" / -->
+                    <input type="file" name="uploadMusic" accept="audio/*"/>
                 <p>
                 <input type="submit" value="上傳">
             </form>
