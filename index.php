@@ -46,19 +46,19 @@
 
             <form method="POST" enctype="multipart/form-data" action="input.php">
                 <br>輸入地標名稱:
-                <input type="text" id="inputNameAdd" name="inputNameAdd" size="30" value="" required="required">
+                <input type="text" id="inputNameAdd" name="inputNameAdd" size="25" value="" required="required">
                 <br>label:<br>
-                <input type="text" id="inputLabelAdd" name="inputLabelAdd" size="30" value="" required="required">
+                <input type="text" id="inputLabelAdd" name="inputLabelAdd" size="25" value="" required="required">
                 <br>google map:
-                <input type="text" id="googleMapURL" name="googleMapURL" size="30" value="" required="required">
+                <input type="text" id="googleMapURL" name="googleMapURL" size="25" value="" required="required">
                 <br>vol(0~1) :
-                <input type="text" id="vol" name="vol" size="30" value="" required="required">
+                <input type="text" id="vol" name="vol" size="25" value="" required="required">
                 <br>db(0~1) :
-                <input type="text" id="db" name="db" size="30" value="" required="required">
+                <input type="text" id="db" name="db" size="25" value="" required="required">
                 <br>當前緯度 :
-                <input type="text" id="recordLat" name="recordLat" size="30" value="" required="required">
+                <input type="text" id="recordLat" name="recordLat" size="25" value="" required="required">
                 <br>當前經度 :
-                <input type="text" id="recordLng" name="recordLng" size="30" value="" required="required">
+                <input type="text" id="recordLng" name="recordLng" size="25" value="" required="required">
                 <br>time:<br>
                   <select name="time">
                 　<option value="day">day</option>
@@ -72,7 +72,7 @@
                 　<option value="event">event</option>
                   </select>
                 <br>author:<br>
-                <input type="text" id="inputAuthorAdd" name="inputAuthorAdd" size="30" required="required" >
+                <input type="text" id="inputAuthorAdd" name="inputAuthorAdd" size="25" required="required" >
                 <br>上傳圖片 :
                     <input type="file" name="uploadPic" accept="image/*"/>
                 <br>上傳音檔 :
