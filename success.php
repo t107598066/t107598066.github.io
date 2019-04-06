@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>dsad</title>
+<title>success</title>
 </head>
 <body>
     <p align="center"><font size="15"><b>輸入成功</b></font><br>
