@@ -42,11 +42,11 @@
      </tr>
      <tr>
          <td width="100"><font size="5" color="black">緯度</td>
-         <td><input id="recordLat" name="recordLat" type="text" size="30" value="" required="required"/></td>
+         <td><input type="text" id="recordLat" name="recordLat" size="30" value="" required="required"/></td>
      </tr>
      <tr>
          <td width="100"><font size="5" color="black">經度</td>
-         <td><input id="recordLng" name="recordLng" type="text" size="30" value="" required="required"/></td>
+         <td><input type="text" id="recordLng" name="recordLng" size="30" value="" required="required"/></td>
      </tr>
 
      <tr>

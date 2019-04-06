@@ -50,15 +50,15 @@
                 <br>label:<br>
                 <input type="text" id="inputLabelAdd" name="inputLabelAdd" size="30" value="" required="required">
                 <br>google map:
-                <input id="googleMapURL" name="googleMapURL" type="text" size="30" value="" required="required">
+                <input type="text" id="googleMapURL" name="googleMapURL" size="30" value="" required="required">
                 <br>vol(0~1) :
-                <input id="vol" name="vol" type="text" size="30" value="" required="required">
+                <input type="text" id="vol" name="vol" size="30" value="" required="required">
                 <br>db(0~1) :
-                <input id="db" name="db" type="text" size="30" value="" required="required">
+                <input type="text" id="db" name="db" size="30" value="" required="required">
                 <br>當前緯度 :
-                <input id="recordLat" name="recordLat" type="text" size="30" value="" required="required">
+                <input type="text" id="recordLat" name="recordLat" size="30" value="" required="required">
                 <br>當前經度 :
-                <input id="recordLng" name="recordLng" type="text" size="30" value="" required="required">
+                <input type="text" id="recordLng" name="recordLng" size="30" value="" required="required">
                 <br>time:<br>
                   <select name="time">
                 　<option value="day">day</option>
@@ -72,7 +72,7 @@
                 　<option value="event">event</option>
                   </select>
                 <br>author:<br>
-                <input type="text" id="inputAuthorAdd" name="inputAuthorAdd" minlength="4" maxlength="8" size="10" required="required" >
+                <input type="text" id="inputAuthorAdd" name="inputAuthorAdd" size="30" required="required" >
                 <br>上傳圖片 :
                     <input type="file" name="uploadPic" accept="image/*"/>
                 <br>上傳音檔 :
