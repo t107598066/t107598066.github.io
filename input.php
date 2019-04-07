@@ -1,5 +1,6 @@
 <?PHP
     include "db_config.php";
+    $conn->set_charset("utf8");
     // $nname = $_POST['$inputNameAdd'];
     $uploadName = $_POST['inputNameAdd'];
     $uploadLabel = $_POST['inputLabelAdd'];
