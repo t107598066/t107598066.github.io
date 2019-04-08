@@ -18,7 +18,8 @@ window.onload = function () {
 
     var latRecord = 25.032;;
     var lngRecord = 121.53;;
-
+    var google_url = "https://www.google.com/maps/place/" + lat + "," + lng;
+    document.getElementById('googleMapURL').value = google_url;
     var mymap = L.map('mapid').setView([lat, lng], zoom);
     L.tileLayer('https://api.mapbox.com/styles/v1/donatuswolf/cjshijl1c13o41empmevvh85j/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZG9uYXR1c3dvbGYiLCJhIjoiY2pzaGdrcGMzMG40aDQzbjVudTJhZzZ6ZyJ9.McGYoRXAEFRlb9lG8CMXmg').addTo(mymap);
 
@@ -63,7 +64,7 @@ window.onload = function () {
               var myLng = event.latlng.lng.toString();
               myLat = myLat.substring(0,8);
               myLng = myLng.substring(0,8);
-              var google_url = "https://www.google.com/maps/place/" + myLat + "," + myLng;
+              google_url = "https://www.google.com/maps/place/" + myLat + "," + myLng;
               document.getElementById('googleMapURL').value = google_url;
               document.getElementById('recordLng').value = myLng;
               document.getElementById('recordLat').value =  myLat;
