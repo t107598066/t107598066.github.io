@@ -27,7 +27,7 @@
          <td><input type="text" id="inputLabelAdd" name="inputLabelAdd" minlength="1" maxlength="8" size="14" required="required" ></td>
      </tr>
      <tr>
-         <td width="250"><font size="5" color="black">googlemaps</td>
+         <td width="250"><font size="5" color="black">google map</td>
         <td><input type="text" id="googleMapURL" name="googleMapURL" minlength="1" maxlength="100" size="14" required="required" ></td>
 
      </tr>
