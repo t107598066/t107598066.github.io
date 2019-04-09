@@ -41,7 +41,8 @@
                 </li>
                 <li class="item4">
                     <h3><a href="form.php" target="_self">Manual add location</a></h3>
-                    <p>Manual add new location</p>
+                    <p>Manual add new location</p><br>
+                    <p>If you didn't define type, the circle would be black.<p>
                 </li>
 
             <form method="POST" enctype="multipart/form-data" action="input.php">

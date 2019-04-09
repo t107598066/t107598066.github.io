@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset='UTF-8'>
@@ -17,28 +16,29 @@
   <p align="center"><font size="15" color="white"><b>Add a new voice of location</b></font>
   <hr><P><p align="center"><font size="20" color="white"><b>
 <form method="POST" enctype="multipart/form-data" action="input.php">
+<div align="center">
 <table border="4" width="600" id="table1" bgcolor="white" height="70" bordercolor="black" align="center">
      <tr>
          <td width="250"><font size="5" color="black">location</font></td>
-         <td><input type="text" id="inputNameAdd" name="inputNameAdd" minlength="4" maxlength="8" size="14" required="required" ></td>
+         <td><input type="text" id="inputNameAdd" name="inputNameAdd" minlength="1" maxlength="8" size="14" required="required" ></td>
      </tr>
      <tr>
          <td width="250"><font size="5" color="black">label</td>
-         <td><input type="text" id="inputLabelAdd" name="inputLabelAdd" minlength="4" maxlength="8" size="14" required="required" ></td>
+         <td><input type="text" id="inputLabelAdd" name="inputLabelAdd" minlength="1" maxlength="8" size="14" required="required" ></td>
      </tr>
      <tr>
          <td width="250"><font size="5" color="black">googlemaps</td>
-        <td><input type="text" id="googleMapURL" name="googleMapURL" minlength="4" maxlength="100" size="14" required="required" ></td>
+        <td><input type="text" id="googleMapURL" name="googleMapURL" minlength="1" maxlength="100" size="14" required="required" ></td>
 
      </tr>
      <tr>
          <td width="250"><font size="5" color="black">volume (0~1 interval)</td>
-        <td><input type="text" id="vol" name="vol" minlength="1" maxlength="4" size="14" required="required" ></td>
+        <td><input type="text" id="vol" name="vol" minlength="1" maxlength="1" size="14" required="required" ></td>
 
      </tr>
      <tr>
          <td width="250"><font size="5" color="black">db (0~1 interval)</td>
-        <td><input type="text" id="db" name="db" minlength="1" maxlength="4" size="14" required="required" ></td>
+        <td><input type="text" id="db" name="db" minlength="1" maxlength="1" size="14" required="required" ></td>
 
      </tr>
      <tr>
@@ -80,11 +80,11 @@
      </tr>
      <tr>
          <td width="250"><font size="5" color="black">author</td>
-         <td><input type="text" id="inputAuthorAdd" name="inputAuthorAdd" minlength="4" maxlength="8" size="10" required="required" ></td>
+         <td><input type="text" id="inputAuthorAdd" name="inputAuthorAdd" minlength="1" maxlength="8" size="10" required="required" ></td>
      </tr>
 
 </table>
-
+</div>
       <p align="center"><input type="button" style="width:120px;height:40px;font-size:20px;" onclick="javascript:location.href='index.php'"  value="return">
       <input type="submit" style="width:120px;height:40px;font-size:20px;" value="submit">
 </form>

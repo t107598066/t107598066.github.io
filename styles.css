@@ -118,7 +118,7 @@ body {
 
 #photo, #photobg {
     background-color: #e5e8ef;
-    position: absolute;
+    position: fixed;
     z-index: 3;
     top: 20px;
     right: 20px;
