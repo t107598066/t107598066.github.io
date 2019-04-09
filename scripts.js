@@ -15,11 +15,10 @@ window.onload = function () {
     var lat = 25.032;
     var lng = 121.53;
     var zoom = 13;
-
     var latRecord = 25.032;;
     var lngRecord = 121.53;;
-    var google_url = "https://www.google.com/maps/place/" + lat + "," + lng;
-    document.getElementById('googleMapURL').value = google_url;
+
+
     var mymap = L.map('mapid').setView([lat, lng], zoom);
     L.tileLayer('https://api.mapbox.com/styles/v1/donatuswolf/cjshijl1c13o41empmevvh85j/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZG9uYXR1c3dvbGYiLCJhIjoiY2pzaGdrcGMzMG40aDQzbjVudTJhZzZ6ZyJ9.McGYoRXAEFRlb9lG8CMXmg').addTo(mymap);
 
@@ -32,7 +31,8 @@ window.onload = function () {
         for (var i = 0; i < json.length; i++) {
             drawPlaces(json[i]);
         }
-
+        var google_url = "https://www.google.com/maps/place/" + lat + "," + lng;
+        document.getElementById('googleMapURL').value = google_url;
         //// create circles ////////
 
         function drawPlaces(data) {
@@ -66,8 +66,8 @@ window.onload = function () {
               myLng = myLng.substring(0,8);
               google_url = "https://www.google.com/maps/place/" + myLat + "," + myLng;
               document.getElementById('googleMapURL').value = google_url;
-              document.getElementById('recordLng').value = myLng;
               document.getElementById('recordLat').value =  myLat;
+              document.getElementById('recordLng').value = myLng;
               latRecord = myLat;
               lngRecord = myLng;
             });
@@ -102,8 +102,8 @@ window.onload = function () {
             }
         }
     });
-    document.getElementById('recordLng').value = latRecord;
-    document.getElementById('recordLat').value =  lngRecord;
+    document.getElementById('recordLng').value = lngRecord;
+    document.getElementById('recordLat').value = latRecord;
 
     function map(x, in_min, in_max, out_min, out_max) {
         return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;

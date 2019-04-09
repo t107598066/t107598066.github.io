@@ -45,19 +45,20 @@
                 </li>
 
             <form method="POST" enctype="multipart/form-data" action="input.php">
-                <br>輸入地標名稱:
+                <br><b>Add new location</b>
+                <br>location:
                 <input type="text" id="inputNameAdd" name="inputNameAdd" size="25" value="" required="required">
                 <br>label:<br>
                 <input type="text" id="inputLabelAdd" name="inputLabelAdd" size="25" value="" required="required">
                 <br>google map:
                 <input type="text" id="googleMapURL" name="googleMapURL" size="25" value="" required="required">
-                <br>vol(0~1) :
+                <br>volume (0~1 interval) :
                 <input type="text" id="vol" name="vol" size="25" value="" required="required">
-                <br>db(0~1) :
+                <br>db (0~1 interval) :
                 <input type="text" id="db" name="db" size="25" value="" required="required">
-                <br>當前緯度 :
+                <br>current latitude :
                 <input type="text" id="recordLat" name="recordLat" size="25" value="" required="required">
-                <br>當前經度 :
+                <br>current longitude :
                 <input type="text" id="recordLng" name="recordLng" size="25" value="" required="required">
                 <br>time:<br>
                   <select name="time">
@@ -73,12 +74,12 @@
                   </select>
                 <br>author:<br>
                 <input type="text" id="inputAuthorAdd" name="inputAuthorAdd" size="25" required="required" >
-                <br>上傳圖片 :
+                <br>upload picture :
                     <input type="file" name="uploadPic" accept="image/*"/>
-                <br>上傳音檔 :
+                <br>upload mp3 :
                     <input type="file" name="uploadMusic" accept="audio/*"/>
                 <p>
-                <input type="submit" value="上傳">
+                <input type="submit" value="upload">
             </form>
           </ul>
         </div>
