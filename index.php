@@ -75,22 +75,19 @@
                   </select>
                 <br>author:<br>
                 <input type="text" id="inputAuthorAdd" name="inputAuthorAdd" size="25" required="required" >
-                <br>upload picture :
-                    <input type="file" name="uploadPic" accept="image/*"/>
-                <br>upload mp3 :
-                    <input type="file" name="uploadMusic" accept="audio/*"/>
+                <br>upload picture (.jpg):
+                    <input type="file" name="uploadPic" accept=".jpg"/>
+                <br>upload sound (.mp3):
+                    <input type="file" name="uploadMusic" accept=".mp3"/>
                 <p>
-                <input type="submit" value="upload">
+                <input type="submit" value="upload" style="font-size:20px">
             </form>
           </ul>
         </div>
         <div class="bottom">
-
             <div class="credits"><a href="https://www-en.ntut.edu.tw/bin/home.php" target="_blank">An NTUT Project</a>
                 • <a href="https://fh-potsdam.github.io/Sounds-of-Taipei/" target="_blank">Github</a></div>
         </div>
-
-
     </div>
     <div id="photo" class="hidden">
         <p id="label">Sunset down by the river</p>
@@ -98,5 +95,4 @@
     <div id="photobg" class="hidden"></div>
     <div id="mapid"></div>
 </body>
-
 </html>

@@ -71,12 +71,12 @@
        </td>
      </tr>
      <tr>
-         <td width="250"><font size="5" color="black">upload picture</td>
-         <td><input type="file" name="uploadPic" accept="image/*"/></td>
+         <td width="250"><font size="5" color="black">upload picture (.jpg)</td>
+         <td><input type="file" name="uploadPic" accept=".jpg"/></td>
      </tr>
      <tr>
-         <td width="250"><font size="5" color="black">upload mp3</td>
-         <td><input type="file" name="uploadMusic" accept="audio/*"/></td>
+         <td width="250"><font size="5" color="black">upload sound (.mp3)</td>
+         <td><input type="file" name="uploadMusic" accept=".mp3"/></td>
      </tr>
      <tr>
          <td width="250"><font size="5" color="black">author</td>
